@@ -47,10 +47,10 @@ app.post("/api/mailer", (req, res, next) => {
 
 app.post("/api/getMapList", (req, res, next) => {
   console.log(req.body.path);
-  let data = getMapList(req.body.path);
+  let data = getMapList(req.body.path); 
   res.send(JSON.stringify(data));
 });
-
+// hello world
 app.post("/api/handleSubmit", (req, res, next) => {
   let riverName = req.body.rivers[req.body.riverIndex].name;
   handleSubmit(riverName, req.body.river);
